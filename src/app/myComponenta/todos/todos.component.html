@@ -1,0 +1,15 @@
+
+<app-addtodo (todoAdd)="addtodo($event)"></app-addtodo>
+<h2 class="text-center">Your Todos</h2>
+<div class="cardbody">
+<div *ngIf="this.todos.length===0; else elseBlock">No record</div>
+<ng-template #elseBlock>
+
+  <div class="card" *ngFor="let todo of todos">
+
+    <app-todoitem [todo]="todo"(todoDelete)="deletetodo($event)"></app-todoitem>
+  </div>
+</ng-template> </div>
+
+
+

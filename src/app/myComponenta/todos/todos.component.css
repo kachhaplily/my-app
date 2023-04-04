@@ -1,0 +1,14 @@
+.cardbody{
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgb(188, 223, 228);
+}
+.card{
+ width:300px;
+ padding: 4px;
+
+}
